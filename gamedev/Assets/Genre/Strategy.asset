@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b4058c960702e4d8bac50b13165ec8, type: 3}
+  m_Name: Strategy
+  m_EditorClassIdentifier: 
+  id: 5
+  nameGenre: "\u0421\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044F"
+  interest: 35
+  s1_Engine: 40
+  s1_Gameplay: 40
+  s1_Quest: 20
+  s2_Dialog: 10
+  s2_Level: 45
+  s2_AI: 45
+  s3_World: 20
+  s3_Graphic: 40
+  s3_Sound: 40
