@@ -9,8 +9,11 @@ public class EndGame : MonoBehaviour
     createGame game;
     [SerializeField]
     List<TMP_Text> texts;
+    [SerializeField]
+    GameObject buttomCreate;
 
-    private void Start()
+
+    public void GameCreated()
     {
         texts[0].text = game.dataGames.games[game.dataGames.games.Count - 1].s_name;
         texts[1].text = $"{Mathf.Round(game.s1_Engine / 3)}";
@@ -23,5 +26,6 @@ public class EndGame : MonoBehaviour
         texts[8].text = $"{Mathf.Round(game.s3_World / 3)}";
         texts[9].text = $"{Mathf.Round(game.s3_Sound / 3)}";
         texts[10].text = $"{game.Rating()}/10";
+        buttomCreate.SetActive(true);
     }
 }

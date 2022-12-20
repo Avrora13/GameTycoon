@@ -17,6 +17,7 @@ public class Calender : MonoBehaviour
     public Game game;
     int daysStage;
     int week = 7;
+    [SerializeField]
     int startMoney = 100000;
     int endMoney;
     public int rentCost;
@@ -69,6 +70,7 @@ public class Calender : MonoBehaviour
                             }
                             newButtom.GetComponent<Slider>().maxValue = countsales;
                             newButtom.GetComponent<Slider>().value = games.games[i].countSale;
+                            newButtom.GetComponent<SliderNumber>().text.text = newButtom.GetComponent<Slider>().value + "";
                             if (games.games[i].weekSale == 0)
                             {
                                 games.games[i].sales = false;
@@ -102,6 +104,7 @@ public class Calender : MonoBehaviour
                 if (daysStage == 0)
                 {
                     stages[2].SetActive(true);
+                    stages[2].GetComponent<EndGame>().GameCreated();
                     stage3 = false;
                 }
             }
